@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+.a{ text-align: left;
+color:#cb5555;
+margin:100px;
+height:360px;
+width: 350px;
+scale:2;
+background-color: beige;
+}
+.a:hover{
+    scale:3;
+    transition: scale 4s;
+}
+.b{
+    text-align: right;
+    color: #f6e1e166;
+    rotate: 60deg;
+    height: 250px;
+    width: 500px;
+    transform: translateX(20px);
+    background-color: #061c06;
+    margin: 200px;
+    padding: 20px;
+}
+.c{text-align: center;
+color: #1a9c1a;
+scale: 0.5;
+height: 800px;
+width:150px;
+background-color: #c7c7f9;
+}
+.d{
+    text-align: justify;
+    color: #348579;
+    transform: skewY(20deg);
+    margin: 100px;
+    background-color: azure;
+}
+.e{
+    width: 500px;
+    margin: 0 auto;
+    
+}
+.e:hover{
+    background-color: #9d5c5c;
+    transition: background-color 5s;
+}
+.outer{
+
+    border:6px solid blue ;
+    padding: 20px;
+    width: 300px;
+    height:300px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+}
+.inner{
+    border:6px solid blueviolet ;
+    top: 50%;
+    left: 50%;
+    padding:30px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+     transform:translate( -50%, -50%);
+     background-color: white;
+     z-index: 1;
+    
+}
+.f:active{
+    background-color: #061c06;
+    transition: background-color 3s;
+}
+.g a:link{
+    background-color: yellow;
+}
+.g a:visited{
+    background-color: #1a9c1a;
+}
+        </style>
+    </head>
+    <body>
+      
+        <div class="a">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Suspendisse lacus neque, consequat ac massa molestie, pellentesque <br>consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit.<br> Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, <br> lobortis viverra quam porttitor. </div>
+        <div class="b">Lorem ipsum <br>dolor sit amet, consectetur adipiscing elit. Suspendisse lacus neque,<br> consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel <br>ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan<br> nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse lacus neque, consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque <br>id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit <br>sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, <br>aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="d">Lorem ipsum<br> dolor sit amet, consectetur adipiscing elit. Suspendisse lacus neque, consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor <br>scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. <br>Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. <br>Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="e">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacus neque, consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="f">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacus neque, consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="g">Lorem ipsum <a href="https://www.w3schools.com">Visit W3Schools.com!</a>dolor sit amet, consectetur adipiscing elit. Suspendisse lacus neque, consequat ac massa molestie, pellentesque consectetur justo. Vivamus at dui posuere, efficitur tortor scelerisque, efficitur eros. Pellentesque id nunc nulla. Nulla porta libero vehicula elit fermentum, vel dictum risus egestas. Nullam imperdiet pharetra nibh vel hendrerit. Pellentesque varius lorem eu porta sagittis. Nam blandit sollicitudin arcu at porta. Aenean nibh diam, euismod vel ligula vitae, malesuada bibendum odio. Praesent id est sit amet lacus consectetur mollis. Cras a quam pharetra, aliquet nulla et, volutpat justo. Praesent eleifend odio elit, et congue tortor lobortis varius. Etiam ac accumsan nulla. Ut mattis nibh ac augue auctor, lobortis viverra quam porttitor. </div>
+        <div class="outer"><br> <br> <br> <br>Lorem ipsum dolor sit amet
+            <div class="inner">Lorum ispum dolor sit amet</div>
+            </div>
+    </body>
+</html>
