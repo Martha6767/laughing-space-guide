@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<style>
+    body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;}
+    .inner{ padding:12px;}
+    .inner:nth-child(1){
+        background: #099090 }
+        .inner:nth-child(2){
+            background: #123456}
+            .inner:nth-child(3){
+                background:#787878
+            }
+            .outer{
+                display:flex;
+                gap:12px;
+                background:#ddd;
+                padding: 12px 24px;
+            }
+            .justify-end {
+  justify-content: flex-end;
+} 
+.space-between {
+  justify-content: space-between;
+} 
+  .justify-center {
+  justify-content: center;
+} 
+.items-center {
+  align-items: center;
+} 
+</style>
+    </head>
+<body>
+  <div class="outer">
+    <div class="inner">Inner 1</div>
+    <div class="inner">Inner 2</div>
+    <div class="inner">Inner 3</div>
+  </div>
+  <div class="outer justify-end">
+    <div class="inner">Inner 1</div>
+    <div class="inner">Inner 2</div>
+    <div class="inner">Inner 3</div>
+    </div>
+     <div class="outer justify-center">
+    <div class="inner">Inner 1</div>
+    <div class="inner">Inner 2</div>
+    <div class="inner">Inner 3</div>
+  </div>
+    <div class="outer space-between">
+    <div class="inner">Inner 1</div>
+    <div class="inner">Inner 2</div>
+    <div class="inner">Inner 3</div>
+  </div>
+    <div class="outer justify-center items-center">
+    <div class="inner">Inner 1</div>
+  </div>
+  </body>
