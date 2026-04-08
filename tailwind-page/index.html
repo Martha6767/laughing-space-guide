@@ -18,13 +18,24 @@
 }
  window.addEventListener('DOMContentLoaded', function(){
   const myContainer = document.getElementById('card-container')
-  const card0 = creatCardHTML( "https://wallpapers-clan.com/wp-content/uploads/2024/12/chicken-goofy-ahh-desktop-wallpaper-preview.jpg", "0.1-10lbs -$500");
-const card1 = creatCardHTML( "https://imgcdn.stablediffusionweb.com/2024/8/27/e908383d-466a-4ee1-9b74-95edf8651445.jpg", "10-100lbs -$1000");
- const card3 = creatCardHTML( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwWwuPHenQpyxX-5cdMwIj8g2PIQjeP00mA&s", "100-2500lbs -$5000"
-);
- myContainer.innerHTML += card0;
- myContainer.innerHTML += card1;
- myContainer.innerHTML += card3;
+  const array = [
+    {
+  title: '0.1-10lbs -$500',
+  image: 'https://wallpapers-clan.com/wp-content/uploads/2024/12/chicken-goofy-ahh-desktop-wallpaper-preview.jpg'
+    },
+{
+    title:'10-100lbs -$1000',
+    image:'https://imgcdn.stablediffusionweb.com/2024/8/27/e908383d-466a-4ee1-9b74-95edf8651445.jpg'
+},{
+title: '100-2500lbs -$5000',
+image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwWwuPHenQpyxX-5cdMwIj8g2PIQjeP00mA&s'
+}
+  ]
+ array.forEach((card) => {
+    myContainer.innerHTML += creatCardHTML(card.image, card.title)
+ })
+
+ 
 });
 
  </script>
